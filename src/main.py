@@ -23,7 +23,7 @@ response = athena_exec_query(db_name, sql, athena_output_location)
 
 # クエリタイム結果表示
 elapsed_time = time.time() - start
-print("elapsed_time:{0}".format(elapsed_time) + "[sec]")
+print(f'elapsed_time: {elapsed_time} [sec]')
 
 # 結果整型
 result = []
