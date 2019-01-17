@@ -3,7 +3,7 @@ import time
 import pandas as pd
 from athena_exec_query import athena_exec_query
 
-# DB
+# Athena DB
 # db_name = os.environ['DB_NAME'] # 環境変数からDB名取得
 db_name = ''
 
@@ -11,14 +11,14 @@ db_name = ''
 # athena_output_location = os.environ['LOG_LOCATION'] # 環境変数からログ出力パス取得
 athena_output_location = ''
 
-# クエリ
+# Athena クエリ
 # sql = os.environ['SQL'] # 環境変数からクエリ取得
 sql = 'select * from xxxxxx limit 100;'
 
 # クエリタイム計測スタート
 start = time.time()
 
-# クエリ実行
+# Athena クエリ実行
 response = athena_exec_query(db_name, sql, athena_output_location)
 
 # クエリタイム結果表示
