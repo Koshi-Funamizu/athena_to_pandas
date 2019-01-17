@@ -1,4 +1,4 @@
-# athena_to_pandas_with_boto3
+# athena_to_pandas
 AthenaにBoto3からクエリを投げ、Pandas DFに格納するプログラム
 
 # 前提条件
