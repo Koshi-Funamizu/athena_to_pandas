@@ -53,17 +53,15 @@ sql = 'select * from athena_test limit 100;'
 # クエリタイム計測スタート
 start = time.time()
 
-# Query 実行
+# クエリ実行
 response = athena_exec_query(db_name, sql, athena_output_location)
 
 # クエリタイム結果表示
 elapsed_time = time.time() - start
 print("elapsed_time:{0}".format(elapsed_time) + "[sec]")
 
-# 結果格納
-result = []
-
 # 整型
+result = []
 for rows in response['ResultSet']['Rows']:
 	tmp = [data for data in rows['Data']]
 	tmp2 = []
