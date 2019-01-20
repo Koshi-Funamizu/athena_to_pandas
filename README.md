@@ -13,14 +13,14 @@ pandas, boto3がインストールされていること
 >>> from athena_exec_query import athena_exec_query
 >>>
 >>> # DB
-... db_name = "rds_dl_blackswan_sandbox_dev"
+... db_name = "test"
 >>>
 >>> # ログ出力場所
 ... athena_output_location = 's3://kfunamizu/logs/'
 >>>
 >>> # クエリ
 ... # sql = sys.argv[1]
-... sql = 'select * from ps4_evt_276_acct_big_app_session_end limit 100;'
+... sql = 'select * from app_session_end limit 100;'
 >>>
 >>> # クエリタイム計測スタート
 ... start = time.time()
