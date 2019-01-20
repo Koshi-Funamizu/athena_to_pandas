@@ -5,7 +5,7 @@ AthenaにBoto3からクエリを投げ、Pandas DFに格納するプログラム
 Python 3.6以降
 pandas, boto3がインストールされていること
 
-# main 実行結果
+# 実行結果
 ```
 >>> import sys
 >>> import time
